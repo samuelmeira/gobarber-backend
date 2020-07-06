@@ -4,5 +4,11 @@
   "port": 5460,
   "username": "postgres",
   "password": "postgres",
-  "database": "gostack_development"
+  "database": "gostack_development",
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
